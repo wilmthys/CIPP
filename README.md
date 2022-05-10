@@ -19,7 +19,8 @@
 ![Genuine Technology Services](github_assets/img/Genuine-logo-vertical-light.png)&nbsp;&nbsp;&nbsp;&nbsp;
 ![Immybot](github_assets/img/Immybot.png)&nbsp;&nbsp;&nbsp;&nbsp;
 ![NinjaOne](github_assets/img/NinjaOne-Light.png#gh-dark-mode-only)
-![NinjaOne](github_assets/img/NinjaOne-Dark.png#gh-light-mode-only)
+![NinjaOne](github_assets/img/NinjaOne-Dark.png#gh-light-mode-only)&nbsp;&nbsp;&nbsp;&nbsp;
+![Huntress](github_assets/img/Huntress.png)
 
 </p>
 
@@ -50,7 +51,7 @@ This project is **FREE** but we do have a **Sponsorware** component. The sponsor
 - The project will be hosted for you.
 - The hosted version will always be the latest release and automatically updated.
 - You'll also receive a staging environment with the latest (nightly/beta) build, to see new features before anyone else.
-- You will receive priority on support issues reported on Github.
+- You will receive priority on support issues reported on GitHub.
 - You will be able to make 1 priortized feature request per month.
 
 Sponsorship allows me to sink some more time into this project and keep it free, so please consider it. :)
@@ -69,8 +70,8 @@ Check out the GIFs below to see how some of the workflows work.
 <kbd><a href="github_assets/screenshots/OffboardUser.gif"><img border="1" src="github_assets/screenshots/OffboardUser.gif" width="250"/></a></kbd>
 <kbd><a href="github_assets/screenshots/SetStandard.gif"><img border="1" src="github_assets/screenshots/SetStandard.gif" width="250"/></a></kbd>
 
-<kbd><a href="github_assets/screenshots/AddautopilotDevice.png"><img border="1" src="github_assets/screenshots/IntunePolicyEngine.gif" width="250"/></a></kbd>
-<kbd><a href="github_assets/screenshots/AddIntunePolicy.png"><img border="1" src="github_assets/screenshots/MyChocoApp.gif" width="250"/></a></kbd>
+<kbd><a href="github_assets/screenshots/IntunePolicyEngine.gif"><img border="1" src="github_assets/screenshots/IntunePolicyEngine.gif" width="250"/></a></kbd>
+<kbd><a href="github_assets/screenshots/MyChocoApp.gif"><img border="1" src="github_assets/screenshots/MyChocoApp.gif" width="250"/></a></kbd>
 <kbd><a href="github_assets/screenshots/Teams.gif"><img border="1" src="github_assets/screenshots/Teams.gif" width="250"/></a></kbd>
 
 # What is the functionality?
