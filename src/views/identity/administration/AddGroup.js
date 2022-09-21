@@ -12,7 +12,13 @@ import {
   CCardBody,
 } from '@coreui/react'
 import { Form } from 'react-final-form'
-import { RFFCFormCheck, RFFCFormInput, RFFCFormSelect } from 'src/components/forms'
+import {
+  Condition,
+  RFFCFormCheck,
+  RFFCFormInput,
+  RFFCFormRadio,
+  RFFCFormSelect,
+} from 'src/components/forms'
 import { CippPage } from 'src/components/layout/CippPage'
 import { useLazyGenericPostRequestQuery } from 'src/store/api/app'
 import { useListDomainsQuery } from 'src/store/api/domains'
@@ -34,6 +40,8 @@ const AddGroup = () => {
       displayName: values.displayName,
       username: values.username,
       isAssignableToRole: values.isAssignableToRole,
+      groupType: values.groupType,
+      allowExternal: values.allowExternal,
     }
     //window.alert(JSON.stringify(shippedValues))
     genericPostRequest({ path: '/api/AddGroup', values: shippedValues })
@@ -80,8 +88,25 @@ const AddGroup = () => {
                       )}
                       {domainsError && <span>Failed to load list of domains</span>}
                     </CCol>
-                    <RFFCFormCheck name="isAssignableToRole" label="Azure Role Group" />
+                    <RFFCFormRadio name="groupType" label="Azure Role Group" value="azurerole" />
+                    <RFFCFormRadio name="groupType" label="Security Group" value="generic" />
+                    <RFFCFormRadio
+                      name="groupType"
+                      label="Distribution List"
+                      value="distribution"
+                    />
+                    <RFFCFormRadio
+                      name="groupType"
+                      label="Mail Enabled Security Group"
+                      value="security"
+                    />
                   </CRow>
+                  <Condition when="groupType" is={'distribution'}>
+                    <RFFCFormCheck
+                      name="allowExternal"
+                      label="Let people outside the organization email the group"
+                    />
+                  </Condition>
                   <CRow className="mb-3">
                     <CCol md={6}>
                       <CButton type="submit" disabled={submitting}>
